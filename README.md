@@ -1,2 +1,2 @@
 # Countdown Clock 
-countdown clock website made with JavaScript and Bootstrap
+Countdown clock made with JavaScript and Bootstrap
