@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+
+* {
+    /* border: 2px black solid; */
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* 1-setting time */
+#headerSetTimer,
+#inputRow,
+#btnStartContainer,
+#clockDisplayer {
+    /* display: none; */
+}
+
+/* 2-when clock is active */
+#CountdownClock,
+#btnReset-btnPause {
+    display: none;
+}
+
+body {
+    /* background-color: rgb(44, 44, 44); */
+    background-image: linear-gradient(to right top, #141415, #141732, #0e184f, #07166c, #0e0e88);
+}
+
+#mainContainer {
+    /* background-image: linear-gradient(to left top, #00ddff, #00beff, #009bff, #006fff, #0027ff); */
+
+    /* overflow: scroll; */
+    height: 100vh;
+}
+
+#Days,
+#Hours,
+#Mins,
+#Secs {
+    font-size: 7vw;
+}
+
+#ClockContainer {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#btnReset-btnPause {
+    margin-top: 50px
+}
+
+nav {
+    background-color: transparent;
+    border-bottom: 2px white solid;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+#navHead {
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+#inputContainer {
+    margin-top: 30px;
+}
+
+#daySelector,
+#hourSelector,
+#minSelector,
+#secSelector {
+    width: 200px;
+    height: 60px;
+    font-size: 2.5em;
+    text-align: center;
+    color: black;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 15px;
+}
+
+#clockDisplayer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#clockDays,
+#clockHours,
+#clockMins,
+#clockSecs {
+    font-size: 5vw;
+}
+
+/* button styles */
+#startButton { margin-top:20px }
+
+#startButton,
+#ResetButton,
+#PauseButton {
+    color: black;
+    width: 300px;
+    height: 80px;
+    font-size: 3em;
+    border-radius: 35px;
+    transition: .2s;
+}
+
+#startButton:hover,
+#ResetButton:hover,
+#PauseButton:hover {
+    color: black;
+    background-color: #d6d6d6;
+    box-shadow: 0px 5px 15px 0px #000000;
+}
+
+@media screen and (min-width: 1100px) {
+
+    #Days,
+    #Hours,
+    #Mins,
+    #Secs {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    #PauseButton {
+        margin-top: 20px;
+        margin-bottom: 120px;
+    }
+}
