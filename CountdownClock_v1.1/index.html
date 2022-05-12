@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- IE compatiability -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Set the page to the width of the device and set the zoom level -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <title>Countdown Timer</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+
+    <!-- scripts -->
+    <script src="scripts/timer.js" defer></script>
+    <script src="scripts/refreshInput.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- REFRESHER -->
+    <!-- <meta http-equiv="refresh" content="1"> -->
+
+</head>
+
+<body>
+    <div id="mainContainer" class="container">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <span id="navHead">Countdown Timer</span>
+                </a>
+            </div>
+        </nav>
+
+        <div id="headerSetTimer" class="row text-center">
+            <h1>Set Timer:</h1>
+        </div>
+
+        <div id="inputRow" class="row">
+            <div class="col-lg-2 col-md-1">
+
+            </div>
+            <div id="inputContainer" class="col-lg-8 col-md-10">
+                <input oninput="refreshDay()" type="number" id="daySelector" name="day" min="0" max="365"
+                    placeholder="Days"><br>
+                <input oninput="refreshHour()" type="number" id="hourSelector" name="hours" min="0" max="23"
+                    placeholder="Hours"><br>
+                <input oninput="refreshMin()" type="number" id="minSelector" name="min" min="0" max="59"
+                    placeholder="Minutes"><br>
+                <input oninput="refreshSec()" type="number" id="secSelector" name="sec" min="0" max="59"
+                    placeholder="Seconds">
+            </div>
+            <div class="col-lg-2 col-md-1">
+            </div>
+        </div>
+
+        <div id="CountdownClock" class="row text-center">
+
+            <div id="ClockContainer" class="col">
+                <span id="Days">0 : </span>
+                <span id="Hours">0 : </span>
+                <span id="Mins">0 : </span>
+                <span id="Secs">0 s</span>
+
+            </div>
+        </div>
+
+        <div id="clockDisplayer" class="row text-center">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span id="clockDays">0</span><br> days</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span id="clockHours">0</span><br> hours</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span id="clockMins">0</span><br> minutes</div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2"><span id="clockSecs">0</span><br> seconds</div>
+        </div>
+
+        <div id="btnStartContainer" class="row text-center">
+            <button onclick="Start()" id="startButton" type="button" class="btn btn-secondary btn-lg">Start
+                Timer</button>
+        </div>
+        <div id="btnReset-btnPause" class="row text-center">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-3">
+                <button onclick="Reset()" id="ResetButton" type="button" class="btn btn-secondary btn-lg">Reset</button>
+            </div>
+
+            <div class="col-lg-2"></div>
+
+            <div class="col-lg-3">
+
+                <button onclick="Pause()" id="PauseButton" type="button" class="btn btn-secondary btn-lg">Pause</button>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- MDB -->
+    <!-- <script type="text/javascript" src="js/mdb.min.js"></script> -->
+
+</body>
+
+</html>
