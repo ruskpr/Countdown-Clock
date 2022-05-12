@@ -1,8 +1,9 @@
 # Countdown Clock 
 Countdown clock made with JavaScript and Bootstrap
 
-![alt text](https://github.com/ruskpr/../CountdownClock_v1.1/images/example1.png)
-![alt text](https://github.com/ruskpr/../CountdownClock_v1.1/images/example2.png)
-
+<p align="center">
+  <img src="https://github.com/ruskpr/../CountdownClock_v1.1/images/example1.png" width="350" title="Screenshot1">
+  <img src="https://github.com/ruskpr/../CountdownClock_v1.1/images/example2.png" width="350" alt="Screenshot2">
+</p>
 
 https://github.com/ruskpr/
